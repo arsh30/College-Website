@@ -1,0 +1,4 @@
+Note -> sara same code chaiye jo home page par tha so, sara code copy krege 
+header and footer baki ko remove krdege -> course,campus,facilities, testimonial,cta 
+
+Only header and Footer will left This

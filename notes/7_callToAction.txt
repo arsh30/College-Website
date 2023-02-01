@@ -1,0 +1,35 @@
+ <section class="cta">
+      <!-- call to action -->
+      <h1>
+        Enroll for Our Varous Online Courses <br />
+        Anywhere from the world
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+-------------------------------------------------
+
+* ------------------------------call to action--------------- */
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./eduford_img/banner2.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: white;
+  font-family: cursive;
+  margin-bottom: 40px;
+}
+
+@media all and (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,96 @@
+/* --------- campus styling */
+
+.campus {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto; /*Taki center me aajaye */
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  /* border: 1px solid orange; */
+  flex-basis: 32%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  /* background: rgba(226, 0, 0, 0.7); */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+  /* border: 1px solid greenyellow; */
+  width: 100%;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5rem;
+  /* neche ki 4 property taki text niche aajaaye and x axis me shift hojaye */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+------------------------------------------------------------------
+ <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam a
+        mollitia optio veritatis ipsum.
+      </p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="./eduford_img/london.png" alt="" />
+          <!-- making color layer on the image -->
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="./eduford_img/newyork.png" alt="" />
+          <!-- making color layer on the image -->
+          <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+        </div>
+
+        <div class="campus-col">
+          <img src="./eduford_img/washington.png" alt="" />
+          <!-- making color layer on the image -->
+          <div class="layer">
+            <h3>WASHINGTON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+

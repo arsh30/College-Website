@@ -1,0 +1,89 @@
+1) section-header --> iske andr hi sbkuch aayega pura html
+  
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./eduford_img/logo.png" alt="logo" /></a>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      NEXT SECTION BHI ISI ME AAYEGA 
+    </section>
+
+
+2) CSS ->
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("./eduford_img/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* position: relative; */
+}
+
+nav {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+}
+
+nav img {
+  /* border: 1px solid black; */
+  /* width: 150px; 150 => 9.3rem or 1px = 0.06rem*/
+  width: 10rem;
+}
+
+.nav-links {
+  /* border: 1px solid black; */
+  width: 100%;
+  /* flex: 1; -> it will occupy all the space in the row */
+  text-align: right;
+}
+
+.nav-links ul li {
+  /* border: 1px solid black; */
+  list-style-type: none;
+  display: inline-block; /*Taki sare links 1 row me aajaye */
+  padding: 1.2rem;
+  /* position: relative; */
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 1.2rem;
+}
+
+.nav-links ul li a::after {
+  content: "";
+  background: #f44336;
+  height: 2px;
+  width: 0%; /*Jitna element ka size hai utna hi cover krega, and initially
+  width 0 di hai, because jb uspr hover krega toh width 1005 hogi */
+  display: block; /*Taki jo underline hai vo next line se aaye */
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}

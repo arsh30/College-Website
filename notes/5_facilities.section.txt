@@ -1,0 +1,80 @@
+/* ------------------------facilities-------------------- */
+.facilities {
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities h1 {
+  font-family: cursive;
+  font-size: 2.4rem;
+}
+
+.facilities p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+
+---------------------------------------------------------
+  <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam
+        repellat perferendis modi explicabo officia?
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="./eduford_img/library.png" alt="" />
+          <h3>World Class Library.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            tenetur repudiandae, impedit placeat repellat adipisci?
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="./eduford_img/basketball.png" alt="" />
+          <h3>Largest Play Ground.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            tenetur repudiandae, impedit placeat repellat adipisci?
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="./eduford_img/cafeteria.png" alt="" />
+          <h3>Tasty and Healthy Food.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            tenetur repudiandae, impedit placeat repellat adipisci?
+          </p>
+        </div>
+      </div>
+    </section>
